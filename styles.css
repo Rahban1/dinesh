@@ -1,0 +1,120 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    /* height: 100%; */
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+.container {
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    /* height: 100%; */
+    /* box-sizing: border-box; */
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+.nav{
+    height: 9rem;
+}
+.div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 1rem;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.points{
+    padding: 1rem;
+    background-color: red;
+    margin: 1rem 2rem;
+    font-size: 1.5rem;
+    border-radius: 999px;
+    color: white;
+    font-weight: 700;
+}
+.points-pos{
+    background-color: rgb(24, 215, 24);
+}
+header {
+    background-color: #f0f0f0;
+    /* padding: 10px; */
+    text-align: center;
+}
+.question-display {
+    flex-grow: 1;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4rem 0;
+}
+.question {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+.option {
+    padding: 10px;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.nav-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 100px;
+}
+.timer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.slide-in {
+    position: fixed;
+    right: -300px;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #f0f0f0;
+    transition: right 0.3s ease-in-out;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.slide-in.active {
+    right: 0;
+}
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
